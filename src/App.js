@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/popper.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
+// import "./libs/easing.js";
+import "lightbox2/dist/js/lightbox.min.js";
+
+// import Sidebar from "./components/sidebar/Sidebar";
+// import About from "./components/about/About";
+// import Education from "./components/Education/Education";
+// import Interest from "./components/skills/Interest";
+// import CarouselImages from "./components/carousel/CarouselImages.js";
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <div className="main">
+            <Navbar />
+          </div>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
