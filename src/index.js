@@ -16,13 +16,16 @@ import Navbar from "./components/Navbar";
 import "jquery/dist/jquery.min.js";
 import "popper.js/dist/popper.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
-// import "./libs/easing.js";
+import "./libs/easing.js";
 import "lightbox2/dist/js/lightbox.min.js";
 import Intro from "./components/Intro";
+import Skills from "./components/Skills";
+
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Intro />
+    <Skills />
   </React.StrictMode>,
   document.getElementById("root")
 );

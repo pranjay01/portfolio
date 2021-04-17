@@ -50,8 +50,15 @@ class Intro extends React.Component {
                 // src="../img/sjsuLogo.png"
                 src={logo}
                 alt="SJSU Logo"
-                style={{ height: "80%", width: "50%" }}
+                style={{ height: "50%", width: "50%" }}
               />
+            </article>
+          </section>
+          <section id="current-work" class="row">
+            {" "}
+            <hr />
+            <article class="col-sm-5 text-left" id="current-work-text">
+              CURRENTLY WORKING AS TEACHING ASSOCIATE AT . . .
             </article>
           </section>
         </div>
