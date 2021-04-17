@@ -19,6 +19,7 @@ header {
   }
 }
 
+#bio-intro-btn,
 header.masthead .masthead-heading {
   opacity: 1;
   -webkit-animation: reveal 2s 1 normal forwards;
@@ -28,6 +29,37 @@ header.masthead .masthead-heading {
   /* font-family: "Bebas Neue", "-apple-system", "BlinkMacSystemFont", "Segoe UI",
     "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+}
+
+#bio-intro-btn span {
+  display: block;
+  -webkit-animation: slide-bio-intro-text-reverse 0.2s 1 normal forwards;
+  animation: slide-bio-intro-text-reverse 0.2s 1 normal forwards;
+}
+
+#current-work {
+  padding-top: 1%;
+  opacity: 1;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation: reveal 2s 1 normal forwards;
+  animation: reveal 2s 1 normal forwards;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 9rem 0;
+  }
+}
+
+#current-work-text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: bolder;
+  height: 100%;
+  text-align: center;
+  padding-top: 3%;
 }
 
 header.masthead .masthead-subheading {
@@ -41,6 +73,18 @@ header.masthead .masthead-subheading {
   animation-delay: 0.5s;
 }
 
+#bio-intro-btn {
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  overflow: hidden;
+  padding: 0.8em 1.4em;
+  font-weight: 700 !important;
+  text-align: center;
+  width: 15rem;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
 @media (min-width: 736px) {
   header.masthead .masthead-subheading {
     font-family: "Quicksand", sans-serif;

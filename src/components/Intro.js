@@ -2,6 +2,7 @@ import React from "react";
 // import "./stars.scss";
 import Typed from "react-typed";
 import Particles from "./Particle";
+import logo from "../img/sjsuLogo.png";
 
 class Intro extends React.Component {
   render() {
@@ -26,9 +27,9 @@ class Intro extends React.Component {
             <hr />
           </div>
           <div class="masthead-subheading">
-            I have vision, I have the ideas and I am an
+            Every domain of Software is unique, and
             <br />
-            engineer by passion to bring them to the life.
+            its my vision as an Engineer to
           </div>
           <br />
           <a
@@ -46,8 +47,9 @@ class Intro extends React.Component {
             <article class="col-sm-7 text-right" id="iit-logo">
               <img
                 id="logo"
-                src="assets/img/iitLogo.png"
-                alt="IIT Logo"
+                // src="../img/sjsuLogo.png"
+                src={logo}
+                alt="SJSU Logo"
                 style={{ height: "80%", width: "50%" }}
               />
             </article>
