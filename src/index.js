@@ -20,12 +20,14 @@ import "./libs/easing.js";
 import "lightbox2/dist/js/lightbox.min.js";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
+import Projects from "./components/Projects";
 
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Intro />
     <Skills />
+    <Projects />
   </React.StrictMode>,
   document.getElementById("root")
 );

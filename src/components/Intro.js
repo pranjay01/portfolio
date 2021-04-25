@@ -29,7 +29,7 @@ class Intro extends React.Component {
           <div class="masthead-subheading">
             Every domain of Software is unique, and
             <br />
-            its my vision as an Engineer to
+            its my vision as an Engineer to explore each.
           </div>
           <br />
           <a
@@ -39,10 +39,10 @@ class Intro extends React.Component {
           >
             <span>LET'S START</span>
           </a>
-          <section id="current-work" class="row">
+          {/*<section id="current-work" class="row">
             <hr />
             <article class="col-sm-5 text-left" id="current-work-text">
-              CURRENTLY WORKING AS TEACHING ASSOCIATE AT . . .
+              CURRENTLY WORKING AS TEACHING ASSOCIATE AT
             </article>
             <article class="col-sm-7 text-right" id="iit-logo">
               <img
@@ -61,6 +61,7 @@ class Intro extends React.Component {
               CURRENTLY WORKING AS TEACHING ASSOCIATE AT . . .
             </article>
           </section>
+*/}
         </div>
       </header>
     );

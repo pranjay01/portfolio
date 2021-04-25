@@ -184,6 +184,362 @@ header.masthead .masthead-heading {
   display: none;
 }
 
+.project-bg {
+  text-align: center;
+  min-height: 100vh;
+  align-content: center;
+  align-items: center;
+}
+
+.tabs-heading {
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+}
+
+.project-inner-bg {
+  background: linear-gradient(160deg, #fff 60%, #474a57 0) !important;
+  min-height: 80vh;
+}
+
+.MuiGrid-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.MuiGrid-align-items-xs-center {
+  align-items: center;
+}
+
+.MuiGrid-justify-xs-center {
+  justify-content: center;
+}
+
+.MuiGrid-spacing-xs-5 {
+  width: calc(100%);
+  margin: -20px;
+}
+
+.MuiGrid-item {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.MuiGrid-grid-xs-12 {
+  flex-grow: 0;
+  max-width: 100%;
+  flex-basis: 100%;
+}
+
+@media (min-width: 600px) {
+  .MuiGrid-grid-sm-6 {
+    flex-grow: 0;
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+}
+
+.MuiGrid-spacing-xs-5 > .MuiGrid-item {
+  padding: 20px;
+}
+
+@media (min-width: 960px) {
+  .MuiGrid-grid-md-3 {
+    flex-grow: 0;
+    max-width: 26%;
+    flex-basis: 26%;
+  }
+}
+
+.project_card_style {
+  background-color: #d3d3d3 !important;
+}
+
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+
+.MuiPaper-elevation1 {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.MuiBackdrop-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  z-index: -1;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.MuiDialog-scrollPaper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MuiDialog-container {
+  height: 100%;
+  outline: 0;
+}
+
+.MuiCard-root {
+  overflow: hidden;
+}
+
+.MuiPaper-rounded {
+  border-radius: 4px;
+}
+
+.MuiPaper-elevation24 {
+  box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%),
+    0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+}
+
+.MuiDialog-paper {
+  margin: 32px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.MuiDialog-paperScrollPaper {
+  display: flex;
+  max-height: calc(100% - 64px);
+  flex-direction: column;
+}
+
+.MuiDialog-paperWidthSm {
+  max-width: 600px;
+}
+
+.MuiDialogTitle-root {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 16px 24px;
+}
+
+.MuiTypography-h6 {
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+
+.MuiDialogContent-root {
+  flex: 1 1 auto;
+  padding: 8px 24px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  height: 30px;
+  width: 30px;
+  outline: #000;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-image: none;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 20px;
+  color: #000;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 20px;
+  color: #000;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 20px;
+  color: #000;
+}
+
+.MuiTypography-colorTextSecondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.w-100 {
+  height: 35vh;
+}
+
+.MuiDialogContentText-root {
+  margin-bottom: 12px;
+}
+
+.MuiDialogActions-root {
+  flex: 0 0 auto;
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.MuiButtonBase-root {
+  color: inherit;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  display: inline-flex;
+  outline: 0;
+  padding: 0;
+  position: relative;
+  align-items: center;
+  user-select: none;
+  border-radius: 0;
+  vertical-align: middle;
+  -moz-appearance: none;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.modal-dialog {
+  max-width: calc(100% - 41.5rem);
+}
+
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.MuiButton-root {
+  color: rgba(0, 0, 0, 0.87);
+  padding: 6px 16px;
+  font-size: 0.875rem;
+  min-width: 64px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.75;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+}
+
+.MuiButton-text {
+  padding: 6px 8px;
+}
+
+.MuiButton-textPrimary {
+  color: #3f51b5;
+}
+
+.MuiDialogActions-spacing > :not(:first-child) {
+  margin-left: 8px;
+}
+
+.MuiButton-label {
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.MuiTouchRipple-root {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.project_card_style:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 12%), 0 4px 8px rgb(0 0 0 / 70%);
+}
+
+.MuiCardHeader-root {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+
+.MuiCardHeader-content {
+  flex: 1 1 auto;
+}
+
+.MuiTypography-root {
+  margin: 0;
+}
+
+.MuiTypography-h5 {
+  font-size: 1.5rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.334;
+  letter-spacing: 0em;
+}
+
+.MuiTypography-displayBlock {
+  display: block;
+}
+
+.MuiCardContent-root {
+  padding: 16px;
+}
+
+.MuiCardContent-root:last-child {
+  padding-bottom: 24px;
+}
+
+.view-project-style {
+  border-style: solid;
+  border-color: #fff;
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-weight: 700;
+}
+
+.view-project-style:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
 header.masthead .masthead-subheading {
   font-family: "Quicksand", sans-serif;
   font-size: 1.2em !important;

@@ -1,13 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
-class SkillSetContainer extends React.Component {
+export default class SkillSetContainer extends Component {
   constructor() {
     super();
     this.state = {};
   }
 
   render() {
-    console.log(this.props);
     return (
       <div class="skills-sets-container">
         <div class="skills-label-container">
@@ -48,5 +47,3 @@ class SkillSetContainer extends React.Component {
     );
   }
 }
-
-export default SkillSetContainer;

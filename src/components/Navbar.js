@@ -95,8 +95,27 @@ class Navbar extends React.Component {
             className="navbar-brand js-scroll"
             href="#page-top"
           >
-            Pranjay Sagar
+            <p style={{ marginTop: "-24px", marginBottom: "-45px" }}>
+              Pranjay Sagar
+            </p>
+
+            <br />
+            <p style={{ fontSize: "16px", marginBottom: "-16px" }}>
+              Teaching Associate at SJSU
+            </p>
           </a>
+
+          {/*<a
+            style={{
+              fontStyle: "italic",
+              fontFamily: "Quicksand",
+              color: "brown",
+            }}
+            className="navbar-brand js-scroll"
+            href="#page-top"
+          >
+            Teaching Associate at SJSU
+          </a>*/}
           <button
             className="navbar-toggler collapsed"
             type="button"
@@ -127,7 +146,7 @@ class Navbar extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#work">
-                  Work
+                  Projects
                 </a>
               </li>
               <li className="nav-item">

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import SkillSetContainer from "./SkillSetContainer";
 // import myImage from "../img/myImage.png";
 
-class Skills extends React.Component {
+export default class Skills extends Component {
   constructor() {
     super();
     this.state = {
@@ -72,7 +72,6 @@ class Skills extends React.Component {
   }
 
   render() {
-    console.log(this.state.skills);
     return (
       <div id="about" class="dashboard-skill-sets-container">
         <div className="skills-container">
@@ -277,5 +276,3 @@ class Skills extends React.Component {
     );
   }
 }
-
-export default Skills;
