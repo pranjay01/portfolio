@@ -1,23 +1,33 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/portfolio/static/js/main.ef110236.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ef110236.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.13232906.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.13232906.js.map",
-    "static/js/2.a9a76b9c.chunk.js": "/portfolio/static/js/2.a9a76b9c.chunk.js",
-    "static/js/2.a9a76b9c.chunk.js.map": "/portfolio/static/js/2.a9a76b9c.chunk.js.map",
-    "static/js/3.85f1cafa.chunk.js": "/portfolio/static/js/3.85f1cafa.chunk.js",
-    "static/js/3.85f1cafa.chunk.js.map": "/portfolio/static/js/3.85f1cafa.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.df194e35.chunk.css",
+    "main.js": "/portfolio/static/js/main.0f387b24.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0f387b24.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.e477968d.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e477968d.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/portfolio/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.f49a3296.chunk.js": "/portfolio/static/js/2.f49a3296.chunk.js",
+    "static/js/2.f49a3296.chunk.js.map": "/portfolio/static/js/2.f49a3296.chunk.js.map",
+    "static/js/3.5a85381a.chunk.js": "/portfolio/static/js/3.5a85381a.chunk.js",
+    "static/js/3.5a85381a.chunk.js.map": "/portfolio/static/js/3.5a85381a.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/portfolio/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.a9a76b9c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a9a76b9c.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/portfolio/static/media/logo.6ce24c58.svg"
+    "static/css/2.ef9168ec.chunk.css.map": "/portfolio/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.df194e35.chunk.css.map": "/portfolio/static/css/main.df194e35.chunk.css.map",
+    "static/js/2.f49a3296.chunk.js.LICENSE.txt": "/portfolio/static/js/2.f49a3296.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/portfolio/static/media/Background.a0c19713.jpg",
+    "static/media/BlazeSight.f7477df5.png": "/portfolio/static/media/BlazeSight.f7477df5.png",
+    "static/media/blood-donation-svgrepo-com.7c60fb8d.svg": "/portfolio/static/media/blood-donation-svgrepo-com.7c60fb8d.svg",
+    "static/media/dollar-exchange-svgrepo-com.c0099943.svg": "/portfolio/static/media/dollar-exchange-svgrepo-com.c0099943.svg",
+    "static/media/glassdoorVectorLogo.e6e8c190.svg": "/portfolio/static/media/glassdoorVectorLogo.e6e8c190.svg",
+    "static/media/yelp-logo@logotyp.us.04ee6c44.svg": "/portfolio/static/media/yelp-logo@logotyp.us.04ee6c44.svg",
+    "static/media/yelp1.2d524378.png": "/portfolio/static/media/yelp1.2d524378.png",
+    "static/media/zillow-logo@logotyp.us.8106e985.svg": "/portfolio/static/media/zillow-logo@logotyp.us.8106e985.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.13232906.js",
-    "static/js/2.a9a76b9c.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.ef110236.chunk.js"
+    "static/js/runtime-main.e477968d.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.f49a3296.chunk.js",
+    "static/css/main.df194e35.chunk.css",
+    "static/js/main.0f387b24.chunk.js"
   ]
 }
