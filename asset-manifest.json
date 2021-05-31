@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e4246679.chunk.css",
-    "main.js": "/portfolio/static/js/main.e6269105.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.e6269105.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f6a6ab10.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f6a6ab10.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.e1e38a4d.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.e1e38a4d.js.map",
     "static/css/2.539277ca.chunk.css": "/portfolio/static/css/2.539277ca.chunk.css",
@@ -15,6 +15,7 @@
     "static/css/main.e4246679.chunk.css.map": "/portfolio/static/css/main.e4246679.chunk.css.map",
     "static/js/2.fba636ba.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fba636ba.chunk.js.LICENSE.txt",
     "static/media/BlazeSight.f7477df5.png": "/portfolio/static/media/BlazeSight.f7477df5.png",
+    "static/media/Resume_PranjaySagar.0d2f0e24.pdf": "/portfolio/static/media/Resume_PranjaySagar.0d2f0e24.pdf",
     "static/media/blood-donation-svgrepo-com.3d43b681.svg": "/portfolio/static/media/blood-donation-svgrepo-com.3d43b681.svg",
     "static/media/dollar-exchange-svgrepo-com.1df0ae69.svg": "/portfolio/static/media/dollar-exchange-svgrepo-com.1df0ae69.svg",
     "static/media/glassdoorVectorLogo.e909ea06.svg": "/portfolio/static/media/glassdoorVectorLogo.e909ea06.svg",
@@ -29,6 +30,6 @@
     "static/css/2.539277ca.chunk.css",
     "static/js/2.fba636ba.chunk.js",
     "static/css/main.e4246679.chunk.css",
-    "static/js/main.e6269105.chunk.js"
+    "static/js/main.f6a6ab10.chunk.js"
   ]
 }
