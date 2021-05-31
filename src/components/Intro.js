@@ -5,6 +5,7 @@ import Particles from "./Particle";
 // import logo from "../img/sjsuLogo.png";
 // import React from 'react';
 import { SocialIcon } from "react-social-icons";
+import resume from "../resume/Resume_PranjaySagar.pdf";
 
 class Intro extends React.Component {
   render() {
@@ -34,18 +35,47 @@ class Intro extends React.Component {
             its my vision as an Engineer to explore each.
           </div>
           <br />
-          <a
-            class="btn btn-primary text-uppercase js-scroll-trigger"
-            id="bio-intro-btn"
-            href="#skills"
-            style={{
-              zIndex: "20",
-              backgroundColor: "#909090",
-              borderColor: "#909090",
-            }}
-          >
-            <span>Download Resume</span>
-          </a>
+          <div style={{}}>
+            <a
+              id="bio-intro-btn"
+              href={resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-icon"
+              aria-label="linkedin"
+              style={{
+                display: "inline-block",
+                // width: "30px",
+                height: "40px",
+                backgroundColor: "rgb(144, 144, 144)",
+                // borderColor: "rgb(144, 144, 144)",
+                border: "1px solid transparent",
+                position: "relative",
+                overflow: "hidden",
+                verticalAlign: "middle",
+                marginRight: "1%",
+                borderRadius: ".25rem",
+                lineHeight: "1.5",
+
+                transition:
+                  "color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out",
+              }}
+            >
+              <div
+                class="social-container"
+                style={{
+                  position: "absolute",
+                  top: "17%",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                }}
+              >
+                DOWNLOAD RESUME
+              </div>
+            </a>
+          </div>
+
           <div
             style={{
               paddingTop: "1%",
@@ -61,15 +91,7 @@ class Intro extends React.Component {
               }}
               url="https://www.linkedin.com/in/pranjay-sagar/"
             />
-            <SocialIcon
-              style={{
-                bgColor: "transparent",
-                marginRight: "1%",
-                height: 30,
-                width: 30,
-              }}
-              url="https://www.youtube.com/channel/UCBwzaYjpDMZW8Ehxoi0k2WQ/"
-            />
+
             <SocialIcon
               bgColor="#000"
               style={{
@@ -78,6 +100,16 @@ class Intro extends React.Component {
                 width: 30,
               }}
               url="https://github.com/pranjay01"
+            />
+
+            <SocialIcon
+              style={{
+                bgColor: "transparent",
+                marginRight: "1%",
+                height: 30,
+                width: 30,
+              }}
+              url="https://www.youtube.com/channel/UCBwzaYjpDMZW8Ehxoi0k2WQ/"
             />
           </div>
 

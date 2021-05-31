@@ -80,7 +80,7 @@ class Contact extends Component {
                     <div class="mi-form-field">
                       <label for="contact-form-email">Enter your email*</label>
                       <input
-                        type="text"
+                        type="email"
                         name="email"
                         id="contact-form-email"
                         required

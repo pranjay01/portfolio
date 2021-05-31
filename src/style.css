@@ -301,7 +301,7 @@ h3.section-subheading {
 }
 
 .MuiGrid-spacing-xs-5 > .MuiGrid-item {
-  padding: 20px;
+  padding: 5%;
 }
 
 @media (min-width: 960px) {
@@ -320,7 +320,7 @@ h3.section-subheading {
   color: #1f2833;
   transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background-color: #fff;
-  max-width: 70%;
+  max-width: 100%;
 }
 
 .MuiPaper-rounded {
