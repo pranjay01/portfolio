@@ -90,19 +90,19 @@ class Navbar extends React.Component {
             style={{
               fontStyle: "italic",
               fontFamily: "Quicksand",
-              color: "brown",
+              // color: "brown",
             }}
-            className="navbar-brand js-scroll"
-            href="#page-top"
+            className="navbar-brand js-scroll nav-link"
+            href="#intro"
           >
             <p style={{ marginTop: "-24px", marginBottom: "-45px" }}>
               Pranjay Sagar
             </p>
 
-            <br />
+            {/*<br />
             <p style={{ fontSize: "16px", marginBottom: "-16px" }}>
               Teaching Associate at SJSU
-            </p>
+         </p>*/}
           </a>
 
           {/*<a
@@ -135,7 +135,7 @@ class Navbar extends React.Component {
           >
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link js-scroll active" href="#home">
+                <a className="nav-link js-scroll active" href="#intro">
                   Home
                 </a>
               </li>
@@ -147,6 +147,11 @@ class Navbar extends React.Component {
               <li className="nav-item">
                 <a className="nav-link js-scroll" href="#work">
                   Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll" href="#experience">
+                  Experience
                 </a>
               </li>
               <li className="nav-item">

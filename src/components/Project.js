@@ -37,7 +37,7 @@ export default class Project extends Component {
             </div>
           </div>
         </div>
-        <div class="mt-2">
+        <div class="mt-2" style={{ paddingRight: "34%" }}>
           <a target="_blank" rel="noopener noreferrer" href={project.gitLink}>
             <img class="github_style" alt="" height="40px" src={GitLogo} />
           </a>

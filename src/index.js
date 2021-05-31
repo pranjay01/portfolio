@@ -21,13 +21,16 @@ import "lightbox2/dist/js/lightbox.min.js";
 import Intro from "./components/Intro";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-
+import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 ReactDOM.render(
   <React.StrictMode>
     <Navbar />
     <Intro />
     <Skills />
     <Projects />
+    <Experience />
+    <Contact />
   </React.StrictMode>,
   document.getElementById("root")
 );

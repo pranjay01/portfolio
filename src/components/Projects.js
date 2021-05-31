@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Project from "./Project";
+import yelp from "./ProjectImages/YelpImages/yelp1.png";
 import glassDoor from "./ProjectImages/glassdoorVectorLogo.svg";
 import YelpLogo from "./ProjectImages/yelp-logo@logotyp.us.svg";
 import ZillowLogo from "./ProjectImages/zillow-logo@logotyp.us.svg";
@@ -21,6 +22,25 @@ export default class Projects extends Component {
           imgageUrl: glassDoor,
           gitLink: "https://github.com/pranjay01/GlassDoor-CMPE273",
           imageList: [],
+          modalData: {
+            title: "Glassdoor Prototype",
+            imageList: [yelp, yelp, yelp],
+            technology: [
+              "Front-end: React.js, Redux",
+              "Back-end: Node.js, Express.js, Kafka MQ",
+              "Database: MongoDB, MySQL, Redis",
+              "Deployment: Amazon EC2",
+              "Testing: JUnit, Mocha",
+            ],
+            description:
+              "The project is aimed at developing a prototype of Glassdoor web application. All three personas; Customer View, Company View and Admin view was developed. Most of the functionalities o the orignal glassdoor application was re developed using MERN stack",
+            content: [
+              {
+                heading: "Customer",
+                description: ["Create new profile", "Save Cards and Address"],
+              },
+            ],
+          },
         },
         {
           id: 2,
@@ -70,18 +90,33 @@ export default class Projects extends Component {
         },
       ],
       viewModal: false,
+      modalData: {},
     };
   }
 
-  handleModalShow = () => {
+  handleModalShow = (id = 1) => {
+    console.log("id", id);
+    let index = this.state.projects.findIndex((x) => x.id === id);
+    let data = {
+      ...this.state.projects[index].modalData,
+    };
+    // console.log(data);
     this.setState({
       viewModal: !this.state.viewModal,
+      modalData: data,
     });
   };
   render() {
     return (
       <div id="work" class="project-bg">
-        <div class="" style={{ padding: "50px" }}>
+        <div
+          class=""
+          style={{
+            paddingTop: "50px",
+            paddingBottom: "10px",
+            background: "#fff",
+          }}
+        >
           <h1 class="tabs-heading">
             <u>Projects</u>
           </h1>
@@ -226,7 +261,10 @@ export default class Projects extends Component {
         </div>
         {/*this.state.viewModal ? <ProjectModal /> : null*/}
         {this.state.viewModal ? (
-          <ModalProject handleModalShow={(id) => this.handleModalShow(id)} />
+          <ModalProject
+            modalData={this.state.modalData}
+            handleModalShow={(id) => this.handleModalShow(id)}
+          />
         ) : null}
       </div>
     );

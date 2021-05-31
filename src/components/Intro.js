@@ -1,8 +1,10 @@
 import React from "react";
 // import "./stars.scss";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import Particles from "./Particle";
-import logo from "../img/sjsuLogo.png";
+// import logo from "../img/sjsuLogo.png";
+// import React from 'react';
+import { SocialIcon } from "react-social-icons";
 
 class Intro extends React.Component {
   render() {
@@ -36,9 +38,49 @@ class Intro extends React.Component {
             class="btn btn-primary text-uppercase js-scroll-trigger"
             id="bio-intro-btn"
             href="#skills"
+            style={{
+              zIndex: "20",
+              backgroundColor: "#909090",
+              borderColor: "#909090",
+            }}
           >
-            <span>LET'S START</span>
+            <span>Download Resume</span>
           </a>
+          <div
+            style={{
+              paddingTop: "1%",
+              paddingLeft: "5%",
+            }}
+          >
+            <SocialIcon
+              style={{
+                bgColor: "transparent",
+                marginRight: "1%",
+                height: 30,
+                width: 30,
+              }}
+              url="https://www.linkedin.com/in/pranjay-sagar/"
+            />
+            <SocialIcon
+              style={{
+                bgColor: "transparent",
+                marginRight: "1%",
+                height: 30,
+                width: 30,
+              }}
+              url="https://www.youtube.com/channel/UCBwzaYjpDMZW8Ehxoi0k2WQ/"
+            />
+            <SocialIcon
+              bgColor="#000"
+              style={{
+                marginRight: "1%",
+                height: 30,
+                width: 30,
+              }}
+              url="https://github.com/pranjay01"
+            />
+          </div>
+
           {/*<section id="current-work" class="row">
             <hr />
             <article class="col-sm-5 text-left" id="current-work-text">

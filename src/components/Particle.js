@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
     position: "absolute",
     opacity: "0.3",
     top: "0",
+    // zIndex: -1,
     left: "0",
   },
 }));

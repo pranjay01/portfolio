@@ -7,11 +7,34 @@ import GitLogo from "./ProjectImages/GitHub-Mark-64px.png";
 class ModalProject extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: true };
+    this.state = {
+      show: true,
+      // modalData: {
+      //   title: "Glassdoor Prototype",
+      //   imageList: [yelp, yelp, yelp],
+      //   technology: [
+      //     "Front-end: React.js, Redux",
+      //     "Back-end: Node.js, Express.js, Kafka MQ",
+      //     "Database: MongoDB, MySQL, Redis",
+      //     "Deployment: Amazon EC2",
+      //     "Testing: JUnit, Mocha",
+      //   ],
+      //   description:
+      //     "The project is aimed at developing a prototype of Glassdoor web application. All three personas; Customer View, Company View and Admin view was developed. Most of the functionalities o the orignal glassdoor application was re developed using MERN stack",
+      //   content: [
+      //     {
+      //       heading: "Customer",
+      //       description: ["Create new profile", "Save Cards and Address"],
+      //     },
+      //   ],
+      // },
+    };
   }
   render() {
     // const handleClose = () => setShow(false);
     // const handleShow = () => setShow(true);
+    let modalData = this.props.modalData;
+    console.log("props", modalData);
     return (
       <Modal
         scrollable={true}
@@ -27,24 +50,17 @@ class ModalProject extends Component {
       >
         <Modal.Header closeButton={false}>
           <Modal.Title id="example-custom-modal-styling-title">
-            Glassdoor Prototype
+            {modalData.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div style={{ borderStyle: "solid", borderColor: "black" }}>
-            <div className="carousel slide">
-              <ol className="carousel-indicators">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li className="active"></li>
-              </ol>
-              <Carousel>
+            <Carousel>
+              {modalData.imageList.map((image) => (
                 <Carousel.Item interval={1000}>
                   <img
                     className="d-block w-100"
-                    src={yelp}
+                    src={image}
                     alt="First slide"
                     style={{ heigh: "35vh" }}
                   />
@@ -56,6 +72,22 @@ class ModalProject extends Component {
                         </p>
                       </Carousel.Caption>*/}
                 </Carousel.Item>
+              ))}
+              {/*<Carousel.Item interval={1000}>
+                  <img
+                    className="d-block w-100"
+                    src={yelp}
+                    alt="First slide"
+                    style={{ heigh: "35vh" }}
+                  />
+                  <Carousel.Caption>
+                        <h3>First slide label</h3>
+                        <p>
+                          Nulla vitae elit libero, a pharetra augue mollis
+                          interdum.
+                        </p>
+                      </Carousel.Caption>
+                </Carousel.Item>
                 <Carousel.Item interval={1000}>
                   <img
                     className="d-block w-100"
@@ -63,13 +95,13 @@ class ModalProject extends Component {
                     alt="Second slide"
                     style={{ heigh: "35vh" }}
                   />
-                  {/*<Carousel.Caption>
+                  <Carousel.Caption>
                         <h3>Second slide label</h3>
                         <p>
                           Lorem ipsum dolor sit amet, consectetur adipiscing
                           elit.
                         </p>
-                      </Carousel.Caption>*/}
+                      </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={1000}>
                   <img
@@ -78,16 +110,25 @@ class ModalProject extends Component {
                     alt="Third slide"
                     style={{ heigh: "35vh" }}
                   />
-                  {/*<Carousel.Caption>
+                  <Carousel.Caption>
                         <h3>Third slide label</h3>
                         <p>
                           Praesent commodo cursus magna, vel scelerisque nisl
                           consectetur.
                         </p>
-                      </Carousel.Caption>*/}
-                </Carousel.Item>
-              </Carousel>
-              {/*<div className="carousel-inner">
+                      </Carousel.Caption>
+                    </Carousel.Item>*/}
+            </Carousel>
+
+            {/*<div className="carousel slide">
+              <ol className="carousel-indicators">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ol>
+              <div className="carousel-inner">
                     <div className="carousel-item">
                       <img
                         className="d-block w-100"
@@ -129,8 +170,7 @@ class ModalProject extends Component {
                       />
                     </div>
                   </div>
-        */}
-              {/*<a className="carousel-control-prev" role="button" href="#">
+        <a className="carousel-control-prev" role="button" href="#">
                 <span
                   aria-hidden="true"
                   className="carousel-control-prev-icon"
@@ -143,23 +183,31 @@ class ModalProject extends Component {
                   className="carousel-control-next-icon"
                 ></span>
                 <span className="sr-only">Next</span>
-    </a>*/}
-            </div>
+    </a>
+            </div>*/}
           </div>
           <p className="MuiTypography-root MuiDialogContentText-root MuiTypography-body1 MuiTypography-colorTextSecondary">
             <div className="mt-2">
+              <br />
+              <div>
+                <h6>Project Description:</h6>
+                <p>{modalData.description}</p>
+              </div>
               <div>
                 <h6>Technology Stack:</h6>
                 <ul>
-                  <li>Front-end: React.js, Redux</li>
+                  {modalData.technology.map((tech) => (
+                    <li>{tech}</li>
+                  ))}
+                  {/* <li>Front-end: React.js, Redux</li>
                   <li>Back-end: Node.js, Express.js, Kafka MQ</li>
                   <li>Database: MongoDB, MySQL, Redis</li>
                   <li>Deployment: Amazon EC2</li>
-                  <li>Testing: JUnit, Mocha</li>
+                 <li>Testing: JUnit, Mocha</li>*/}
                 </ul>
               </div>
-              <div>
-                <h6>Personas</h6>
+              {/*<div>
+                <h6>Application & Functionalities</h6>
                 <ul>
                   <li>
                     Customer
@@ -187,7 +235,7 @@ class ModalProject extends Component {
                     </ul>
                   </li>
                 </ul>
-              </div>
+              </div>*/}
             </div>
           </p>
         </Modal.Body>
